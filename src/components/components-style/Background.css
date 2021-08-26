@@ -1,0 +1,23 @@
+.Background {
+    z-index: -1;
+    height: 100%;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background: hsl(235, 21%, 11%);
+}
+
+.bg-image {
+    background-image: url("mobile.jpg");
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media(min-width:500px){
+    .bg-image {
+        background-image: url("mobile.jpg");
+        height: 300px;
+    }
+}
+

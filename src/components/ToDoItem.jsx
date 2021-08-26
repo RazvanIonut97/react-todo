@@ -2,9 +2,11 @@
 const ToDoItem=({item})=> {
     return (
         <div className="item">
-            <h2>
+            <div></div>
+            <input type="checkbox" name="" id={item._id} />
+            <p>
                 {item.title}
-            </h2>
+            </p>
         </div>
     )
 }

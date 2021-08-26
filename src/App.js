@@ -1,8 +1,12 @@
 import './App.css';
 import {SortableContainer} from 'react-sortable-hoc';
-import ToDoList from './ToDoList';
+import ToDoList from './components/ToDoList';
+import Background from './components/Background';
 import axios from 'axios'
 import{useState,useEffect} from 'react'
+import Header from './components/Header';
+import AddTodo from './components/AddTodo';
+import Filter from './components/Filter';
 
 function App() {
   
@@ -20,12 +24,16 @@ function App() {
   const onSortEnd = (e) =>{
     //var newTodos = arrayMove(todos, e.oldIndex, e.newIndex )
     setTrigger(!trigger);
-    console.log("muuuuuuuuuutare " +trigger)
+    console.log(e)
     //setTodos(newTodos)
   };
   return (
     <div className="App">
+      <Background/>
+      <Header/>
+      <AddTodo/>
       <SortableList items={todos} onSortEnd={onSortEnd}/>
+      <Filter/>
     </div>
   );
 }

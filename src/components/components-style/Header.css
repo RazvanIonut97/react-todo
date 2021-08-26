@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    color: white;
+   
+}
+.header button{
+    height: 26px;
+    width: 26px;
+    border:0;
+    background: url('icon-sun.svg') no-repeat center;
+}
+.header h1{
+    font-size: 40px;
+    height: 100%;
+    font-weight: 700;
+    width: 50%;
+
+    
+}
