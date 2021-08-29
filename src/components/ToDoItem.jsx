@@ -7,6 +7,7 @@ const ToDoItem=({item})=> {
             <p>
                 {item.title}
             </p>
+            <button className="close-btn"></button>
         </div>
     )
 }

@@ -30,10 +30,13 @@ function App() {
   return (
     <div className="App">
       <Background/>
+      <div className="ceva">
       <Header/>
       <AddTodo/>
       <SortableList items={todos} onSortEnd={onSortEnd}/>
       <Filter/>
+      </div>
+     
     </div>
   );
 }
